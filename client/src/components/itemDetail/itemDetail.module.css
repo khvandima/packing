@@ -1,0 +1,67 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.container{
+   max-width: 600px;
+   width: 100%;
+   margin: 20px auto;
+}
+
+.itemCard{
+   max-width: 500px;
+   width: 100%;
+   margin: 0 auto;
+   display: flex;
+}
+
+.itemCard_img{
+   width: 200px;
+   height: 200px;
+}
+
+.itemCard_list{
+   width: 70%;
+   text-align: left;
+   padding: 5px 15px;
+}
+
+.itemCard_list__name{
+padding: 5px;
+font-size: 28px;
+}
+
+.itemCard_list__brand{
+   padding: 5px;
+   font-size: 20px;
+}
+
+.itemCard_list__quantity{
+   padding: 5px;
+   font-size: 20px;;
+}
+.itemCard_input{
+   width: 50px;
+   outline: none;
+   text-align: center;
+}
+
+.itemCard_btn{
+   margin: 0 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+}
+
+.edit_btn{
+   width: 100px;
+   height: 35px;
+}
+
+.save_btn{
+   width: 100px;
+   height: 35px;   
+}

@@ -1,0 +1,23 @@
+input{
+   width: 100%;
+   padding: 5px;
+   font-size: 20px;
+   outline: none;
+   border: none;
+   /* background-color: hsl(0, 14%, 97%); */
+   border-bottom: 1px solid rgb(165, 162, 162);
+   box-sizing: border-box;
+   margin-bottom: 30px;
+}
+
+.searchForm{
+   padding: 0;
+   max-width: 400px;
+   margin: 0 auto;
+}
+
+.listBlock{
+   display: flex;
+   justify-content: space-between;
+}
+

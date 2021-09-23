@@ -1,0 +1,56 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+.listItemWrap{
+   background-color: #fff;
+   max-width: 500px;
+   margin: 10px auto;
+   padding: 0;
+   top: 5px;
+   left: 0;
+   width: 100%;
+   box-shadow: 0 0 8px rgb(190, 187, 187);
+   transition: all .4s ease-out;
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+}
+
+.listItemWrap:hover{
+   /* background-color: rgb(146, 189, 230); */
+   /* color: #fff; */
+
+   background-color: rgb(177, 236, 195);
+   color: rgb(63, 61, 61);
+   transform: scale(1.03);
+}
+
+.itemImg{
+   width: 20%;
+}
+
+.itemNameWrap{
+   display: flex;
+   flex-direction: column;
+   width: 60%;
+   justify-content: center;
+   align-items: flex-start;
+   padding-left: 10px;
+}
+
+.itemName{
+   padding-top: 5px;
+   padding-bottom: 2px;
+}
+
+.itemBrand{
+   padding-top: 2px;
+   padding-bottom: 5px;
+}
+
+.itemQuantity{
+   width: 20%;
+}
