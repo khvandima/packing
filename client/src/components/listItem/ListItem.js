@@ -7,7 +7,7 @@ export default function ListItem(props) {
    const item = props.item;
 
    return (
-      <Link to={"/item/" + item.id} key={item}>
+      <Link to={"/item/" + item._id} key={item}>
          <div className={styles.listItemWrap}>
             <div className={styles.itemImg}>
                <img src="" alt="" />

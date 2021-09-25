@@ -1,55 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Context } from "../../Context";
 import { Link } from "react-router-dom";
 
 import styles from "./itemDetail.module.css";
 
 export default function ItemDetail(props) {
-   const arrayItems = [
-      {
-         id: "0001",
-         name: "쟁반막국수",
-         brand: "면사랑",
-         quantity: 0,
-         place: ["현장", "자제팀"],
-      },
-      {
-         id: "0002",
-         name: "쫄면",
-         brand: "족발야시장",
-         quantity: 10,
-         place: ["현장", "자제팀"],
-      },
-      {
-         id: "0003",
-         name: "냉면",
-         brand: "면사랑",
-         quantity: 0,
-         place: ["현장", "자제팀"],
-      },
-      {
-         id: "0004",
-         name: "평양냉면",
-         brand: "면사랑",
-         quantity: 5,
-         place: ["현장", "자제팀"],
-      },
-      {
-         id: "0005",
-         name: "함흥냉면",
-         brand: "면사랑",
-         quantity: 40,
-         place: ["현장", "자제팀"],
-      },
-   ];
+   const [arrayItems] = useContext(Context);
 
    //*Получаем id из props для поиска нужного item
    let id = props.match.params.id;
 
    let item = arrayItems.filter((item) => {
-      return item.id.includes(id);
+      return item._id.includes(id);
    })[0];
-
-   console.log(item);
 
    return (
       <div className={styles.container}>
