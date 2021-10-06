@@ -8,7 +8,7 @@ const boxRoute = require("./routes/box");
 
 app.use(cors());
 app.use(express.json());
-app.use(express.static(__dirname + "./public"));
+app.use(express.static(__dirname + "./client/public"));
 
 app.use("/box", boxRoute);
 
